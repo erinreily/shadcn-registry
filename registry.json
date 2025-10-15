@@ -60,7 +60,7 @@
       "type": "registry:component",
       "title": "Box Demo",
       "description": "A demo for box components",
-      "registryDependencies": ["box/box-button/BoxButton", "box/box-icon-button/BoxIconButton"],
+      "registryDependencies": ["box-button", "box-icon-button", "close-icon"],
       "files": [
         {
           "path": "registry/new-york/blocks/box-demo/box-demo.tsx",
