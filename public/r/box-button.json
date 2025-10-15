@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "box-button",
+  "type": "registry:ui",
+  "title": "Box Button",
+  "description": "A simple button",
+  "files": [
+    {
+      "path": "registry/new-york/ui/box/box-button/BoxButton.tsx",
+      "content": "import React from 'react';\nimport './BoxButton.scss';\n\nexport interface BoxButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {\n  variant?: 'primary' | 'secondary' | 'outline' | 'tertiary';\n  size?: 'small' | 'medium' | 'large';\n  children: React.ReactNode;\n}\n\nexport const BoxButton = React.forwardRef<HTMLButtonElement, BoxButtonProps>(\n  ({ variant = 'primary', size = 'medium', className = '', children, ...props }, ref) => {\n    const classes = [\n      'box-button',\n      `box-button--${variant}`,\n      `box-button--${size}`,\n      className\n    ].filter(Boolean).join(' ');\n\n    return (\n      <button ref={ref} className={classes} {...props}>\n        {children}\n      </button>\n    );\n  }\n);\n\nBoxButton.displayName = 'BoxButton';\n\n",
+      "type": "registry:ui"
+    }
+  ]
+}

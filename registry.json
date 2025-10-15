@@ -4,6 +4,42 @@
   "homepage": "https://acme.com",
   "items": [
     {
+      "name": "box-button",
+      "type": "registry:ui",
+      "title": "Box Button",
+      "description": "A simple button",
+      "files": [
+        {
+          "path": "registry/new-york/ui/box/box-button/BoxButton.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "box-icon-button",
+      "type": "registry:ui",
+      "title": "Box Icon Button",
+      "description": "A simple icon button",
+      "files": [
+        {
+          "path": "registry/new-york/ui/box/box-icon-button/BoxIconButton.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "close-icon",
+      "type": "registry:ui",
+      "title": "Close Icon",
+      "description": "A close icon",
+      "files": [
+        {
+          "path": "registry/new-york/ui/box/icons/Close.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "box-demo",
       "type": "registry:component",
       "title": "Box Demo",
