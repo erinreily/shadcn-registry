@@ -4,7 +4,8 @@ import { OpenInV0Button } from "@/components/open-in-v0-button"
 // import { ExampleForm } from "@/registry/new-york/blocks/example-form/example-form"
 // import PokemonPage from "@/registry/new-york/blocks/complex-component/page"
 // import { ExampleCard } from "@/registry/new-york/blocks/example-with-css/example-card"
-import BoxDemo from "@/registry/new-york/blocks/box-demo/box-demo"
+// import BoxDemo from "@/registry/new-york/blocks/box-demo/box-demo"
+import { BoxDemoAll } from "@/registry/new-york/blocks/box-demo-all/box-demo-all.tsx"
 // This page displays items from the custom registry.
 // You are free to implement this with your own design as needed.
 
@@ -23,10 +24,10 @@ export default function Home() {
             <h2 className="text-sm text-muted-foreground sm:pl-3">
               A demo of the box components
             </h2>
-            <OpenInV0Button name="box-demo" className="w-fit" />
+            <OpenInV0Button name="box-demo-all" className="w-fit" />
           </div>
           <div className="flex items-center justify-center min-h-[400px] relative">
-            <BoxDemo />
+            <BoxDemoAll />
           </div>
         </div>
 

@@ -1,0 +1,322 @@
+/* CSS Custom Properties (Tokens) */
+:root {
+  /* Surface tokens */
+  --surface-surface-secondary: #fbfbfb;
+  --surface-surface-brand: #0061d5;
+  --surface-surface-brand-hover: #006ae9;
+  --surface-surface-brand-pressed: #004eac;
+  --surface-cta-surface-secondary: #ffffff;
+  --surface-cta-surface-secondary-hover: #f4f4f4;
+  --surface-cta-surface-secondary-pressed: #e8e8e8;
+  --surface-cta-surface-outline: rgba(0, 0, 0, 0);
+  --surface-cta-surface-outline-hover: rgba(0, 0, 0, 0.04);
+  --surface-cta-surface-outline-pressed: rgba(0, 0, 0, 0.08);
+  --surface-cta-surface-icon: rgba(0, 0, 0, 0);
+  --surface-cta-surface-icon-hover: rgba(0, 0, 0, 0.04);
+  --surface-cta-surface-icon-pressed: rgba(0, 0, 0, 0.08);
+  --surface-cta-surface-tertiary: #ffffff;
+  --surface-cta-surface-tertiary-hover: #f4f4f4;
+  --surface-cta-surface-tertiary-pressed: #e8e8e8;
+
+  /* Border tokens */
+  --border-cta-border-secondary: #bcbcbc;
+  --border-cta-border-outline: #000000;
+  --border-1: 0.0625rem;
+  --border-2: 0.125rem;
+
+  /* Text tokens */
+  --text-text-on-light: #222222;
+  --text-text-on-dark: #ffffff;
+
+  /* Outline tokens */
+  --outline-focus-on-light: #2486fc;
+
+  /* Typography tokens */
+  --body-large-font-family: Lato, -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --body-default-font-family: Lato, -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --body-default-bold-font-weight: 700;
+  --body-default-letter-spacing: 0.01875rem;
+  --body-large-font-size: 1rem;
+  --body-large-line-height: 1.5rem;
+  --body-default-font-size: 0.875rem;
+  --body-default-line-height: 1.25rem;
+  --caption-default-font-size: 0.75rem;
+  --caption-default-line-height: 0.875rem;
+
+  /* Radius tokens */
+  --radius-3: 0.5rem;
+  --radius-half: 2rem;
+
+  /* Space tokens */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  /* Size tokens */
+  --size-3: 0.75rem;
+  --size-4: 1rem;
+  --size-5: 1.25rem;
+  --size-8: 2rem;
+  --size-10: 2.5rem;
+  --size-12: 3rem;
+
+  /* Animation tokens */
+  --animation-duration-2: 200ms;
+}
+
+/* BoxButton Styles */
+.box-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-family: var(--body-default-font-family);
+  font-weight: var(--body-default-bold-font-weight);
+  letter-spacing: var(--body-default-letter-spacing);
+  transition: all var(--animation-duration-2) ease;
+  outline: none;
+  position: relative;
+}
+
+.box-button:focus-visible {
+  outline: var(--border-2) solid var(--outline-focus-on-light);
+  outline-offset: var(--space-1);
+}
+
+.box-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.box-button--primary {
+  background-color: var(--surface-surface-brand);
+  color: var(--text-text-on-dark);
+  border-radius: var(--radius-half);
+}
+
+.box-button--primary:hover:not(:disabled) {
+  background-color: var(--surface-surface-brand-hover);
+}
+
+.box-button--primary:active:not(:disabled) {
+  background-color: var(--surface-surface-brand-pressed);
+}
+
+.box-button--secondary {
+  background-color: var(--surface-cta-surface-secondary);
+  color: var(--text-text-on-light);
+  border: var(--border-1) solid var(--border-cta-border-secondary);
+  border-radius: var(--radius-half);
+}
+
+.box-button--secondary:hover:not(:disabled) {
+  background-color: var(--surface-cta-surface-secondary-hover);
+}
+
+.box-button--secondary:active:not(:disabled) {
+  background-color: var(--surface-cta-surface-secondary-pressed);
+}
+
+.box-button--outline {
+  background-color: var(--surface-cta-surface-outline);
+  color: var(--text-text-on-light);
+  border: var(--border-1) solid var(--border-cta-border-outline);
+  border-radius: var(--radius-half);
+}
+
+.box-button--outline:hover:not(:disabled) {
+  background-color: var(--surface-cta-surface-outline-hover);
+}
+
+.box-button--outline:active:not(:disabled) {
+  background-color: var(--surface-cta-surface-outline-pressed);
+}
+
+.box-button--tertiary {
+  background-color: var(--surface-cta-surface-tertiary);
+  color: var(--text-text-on-light);
+  border-radius: var(--radius-half);
+}
+
+.box-button--tertiary:hover:not(:disabled) {
+  background-color: var(--surface-cta-surface-tertiary-hover);
+}
+
+.box-button--tertiary:active:not(:disabled) {
+  background-color: var(--surface-cta-surface-tertiary-pressed);
+}
+
+.box-button--small {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--caption-default-font-size);
+  line-height: var(--caption-default-line-height);
+  min-height: var(--size-8);
+}
+
+.box-button--medium {
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--body-default-font-size);
+  line-height: var(--body-default-line-height);
+  min-height: var(--size-10);
+}
+
+.box-button--large {
+  padding: var(--space-4) var(--space-8);
+  font-size: var(--body-large-font-size);
+  line-height: var(--body-large-line-height);
+  min-height: var(--size-12);
+}
+
+/* BoxIconButton Styles */
+.box-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-family: var(--body-default-font-family);
+  transition: all var(--animation-duration-2) ease;
+  outline: none;
+  position: relative;
+  background-color: var(--surface-surface-secondary);
+  color: var(--text-text-on-light);
+  border-radius: var(--radius-3);
+  flex-shrink: 0;
+}
+
+.box-icon-button:focus-visible {
+  outline: var(--border-2) solid var(--outline-focus-on-light);
+  outline-offset: 0;
+  box-shadow: 0 0 0 var(--border-2) var(--outline-focus-on-light);
+}
+
+.box-icon-button:active:not(:disabled) {
+  background-color: var(--surface-cta-surface-icon-pressed);
+  transform: scale(0.98);
+}
+
+.box-icon-button:hover:not(:disabled) {
+  background-color: var(--surface-cta-surface-icon-hover);
+}
+
+.box-icon-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+  background-color: var(--surface-surface-secondary);
+  color: var(--text-text-on-light);
+}
+
+.box-icon-button--default {
+  background-color: var(--surface-surface-secondary);
+}
+
+.box-icon-button--default:hover:not(:disabled) {
+  background-color: var(--surface-cta-surface-icon-hover);
+}
+
+.box-icon-button--default:active:not(:disabled) {
+  background-color: var(--surface-cta-surface-icon-pressed);
+}
+
+.box-icon-button--subtle {
+  background-color: var(--surface-cta-surface-icon);
+}
+
+.box-icon-button--subtle:hover:not(:disabled) {
+  background-color: var(--surface-cta-surface-icon-hover);
+}
+
+.box-icon-button--subtle:active:not(:disabled) {
+  background-color: var(--surface-cta-surface-icon-pressed);
+}
+
+.box-icon-button--ghost {
+  background-color: transparent;
+}
+
+.box-icon-button--ghost:hover:not(:disabled) {
+  background-color: var(--surface-cta-surface-icon-hover);
+}
+
+.box-icon-button--ghost:active:not(:disabled) {
+  background-color: var(--surface-cta-surface-icon-pressed);
+}
+
+.box-icon-button--small {
+  width: var(--size-8);
+  height: var(--size-8);
+  font-size: var(--size-3);
+  padding: var(--space-2);
+}
+
+.box-icon-button--small svg {
+  width: var(--size-3);
+  height: var(--size-3);
+}
+
+.box-icon-button--medium {
+  width: var(--size-10);
+  height: var(--size-10);
+  font-size: var(--size-4);
+  padding: var(--space-3);
+}
+
+.box-icon-button--medium svg {
+  width: var(--size-4);
+  height: var(--size-4);
+}
+
+.box-icon-button--large {
+  width: var(--size-12);
+  height: var(--size-12);
+  font-size: var(--size-5);
+  padding: var(--space-4);
+}
+
+.box-icon-button--large svg {
+  width: var(--size-5);
+  height: var(--size-5);
+}
+
+/* Demo Layout Styles */
+.box-demo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.button-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.demo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.demo-row h3 {
+  font-size: 16px;
+  font-weight: 600;
+  min-width: 100px;
+  text-align: right;
+}
+

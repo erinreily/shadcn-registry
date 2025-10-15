@@ -106,6 +106,22 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "box-demo-all",
+      "type": "registry:component",
+      "title": "Box Demo All",
+      "description": "Complete Box component demo with all components in one file.",
+      "files": [
+        {
+          "path": "registry/new-york/blocks/box-demo-all/box-demo-all.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/blocks/box-demo-all/box-demo-all.css",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
