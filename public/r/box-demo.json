@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "box-demo",
+  "type": "registry:component",
+  "title": "Box Demo",
+  "description": "A demo for box components",
+  "registryDependencies": [
+    "box/box-button/BoxButton",
+    "box/box-icon-button/BoxIconButton"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/blocks/box-demo/box-demo.tsx",
+      "content": "import { BoxButton } from \"@/registry/new-york/ui/box/box-button/BoxButton\"\nimport { BoxIconButton } from \"@/registry/new-york/ui/box/box-icon-button/BoxIconButton\"\nimport { CloseIcon } from \"@/registry/new-york/ui/box/icons/Close\"\n\nexport default async function Page() {\n  return (\n    <div>\n      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', alignItems: 'center' }}>\n        <h2 style={{ fontSize: '24px', fontWeight: 'bold' }}>Button Variations</h2>\n        <br />\n        <h3>Primary</h3>\n        <BoxButton>Click me</BoxButton>\n        <h3>Secondary</h3>\n        <BoxButton variant=\"secondary\">Click me</BoxButton>\n        <h3>Tertiary</h3>\n        <BoxButton variant=\"tertiary\">Click me</BoxButton>\n        <h3>Small</h3>\n        <BoxButton size=\"small\">Click me</BoxButton>\n        <h3>Large</h3>\n        <BoxButton size=\"large\">Click me</BoxButton>\n      </div>\n\n      <br />\n      <br />\n\n      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', alignItems: 'center' }}>\n        <h2 style={{ fontSize: '24px', fontWeight: 'bold' }}>Icon Button Variations</h2>\n        <br />\n        <h3>Default</h3>\n        <BoxIconButton variant=\"subtle\"><CloseIcon /></BoxIconButton>\n        <h3>Small</h3>\n        <BoxIconButton size=\"small\"><CloseIcon /></BoxIconButton>\n        <h3>Large</h3>\n        <BoxIconButton size=\"large\"><CloseIcon /></BoxIconButton>\n      </div>\n    </div>\n  )\n}\n",
+      "type": "registry:component"
+    }
+  ]
+}

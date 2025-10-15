@@ -1,0 +1,80 @@
+// Surface tokens
+$surface-surface-secondary: #fbfbfb !default;
+$surface-surface-brand: #0061d5 !default;
+$surface-surface-brand-hover: #006ae9 !default;
+$surface-surface-brand-pressed: #004eac !default;
+$surface-cta-surface-secondary: #ffffff !default;
+$surface-cta-surface-secondary-hover: #f4f4f4 !default;
+$surface-cta-surface-secondary-pressed: #e8e8e8 !default;
+$surface-cta-surface-outline: rgba(0, 0, 0, 0) !default;
+$surface-cta-surface-outline-hover: rgba(0, 0, 0, 0.04) !default;
+$surface-cta-surface-outline-pressed: rgba(0, 0, 0, 0.08) !default;
+$surface-cta-surface-icon: rgba(0, 0, 0, 0) !default;
+$surface-cta-surface-icon-hover: rgba(0, 0, 0, 0.04) !default;
+$surface-cta-surface-icon-pressed: rgba(0, 0, 0, 0.08) !default;
+$surface-cta-surface-tertiary: #ffffff !default;
+$surface-cta-surface-tertiary-hover: #f4f4f4 !default;
+$surface-cta-surface-tertiary-pressed: #e8e8e8 !default;
+
+// Border tokens
+$border-cta-border-secondary: #bcbcbc !default;
+$border-cta-border-secondary-pressed: #bcbcbc !default;
+$border-cta-border-secondary-hover: #bcbcbc !default;
+$border-cta-border-outline: #000000 !default;
+$border-cta-border-outline-hover: #000000 !default;
+$border-cta-border-outline-pressed: #000000 !default;
+$border-1: 0.0625rem !default;
+$border-2: 0.125rem !default;
+
+// Text tokens
+$text-text-on-light: #222222 !default;
+$text-text-on-dark: #ffffff !default;
+
+// Outline tokens
+$outline-focus-on-light: #2486fc !default;
+
+// Typography tokens
+$body-large-font-family: Lato, -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue',
+    sans-serif !default;
+$body-large-font-weight: 400 !default;
+$body-large-line-height: 1.5rem !default;
+$body-large-font-size: 1rem !default;
+$body-large-letter-spacing: 0.01875rem !default;
+
+$body-default-bold-font-weight: 700 !default;
+$body-default-font-family: Lato, -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto,
+    'Helvetica Neue', sans-serif !default;
+$body-default-font-weight: 400 !default;
+$body-default-line-height: 1.25rem !default;
+$body-default-font-size: 0.875rem !default;
+$body-default-letter-spacing: 0.01875rem !default;
+
+$caption-default-font-family: Lato, -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto,
+    'Helvetica Neue', sans-serif !default;
+$caption-default-font-weight: 400 !default;
+$caption-default-line-height: 0.875rem !default;
+$caption-default-font-size: 0.75rem !default;
+$caption-default-letter-spacing: 0.01875rem !default;
+
+// Radius tokens
+$radius-3: 0.5rem !default;
+$radius-half: 2rem !default;
+
+// Space tokens
+$space-1: 0.25rem !default;
+$space-2: 0.5rem !default;
+$space-3: 0.75rem !default;
+$space-4: 1rem !default;
+$space-6: 1.5rem !default;
+$space-8: 2rem !default;
+
+// Size tokens
+$size-3: 0.75rem !default;
+$size-4: 1rem !default;
+$size-5: 1.25rem !default;
+$size-8: 2rem !default;
+$size-10: 2.5rem !default;
+$size-12: 3rem !default;
+
+// Animation tokens
+$animation-duration-2: 200ms !default;

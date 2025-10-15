@@ -4,6 +4,19 @@
   "homepage": "https://acme.com",
   "items": [
     {
+      "name": "box-demo",
+      "type": "registry:component",
+      "title": "Box Demo",
+      "description": "A demo for box components",
+      "registryDependencies": ["box/box-button/BoxButton", "box/box-icon-button/BoxIconButton"],
+      "files": [
+        {
+          "path": "registry/new-york/blocks/box-demo/box-demo.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "hello-world",
       "type": "registry:component",
       "title": "Hello World",
