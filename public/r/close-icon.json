@@ -4,6 +4,9 @@
   "type": "registry:ui",
   "title": "Close Icon",
   "description": "A close icon",
+  "dependencies": [
+    "sass"
+  ],
   "files": [
     {
       "path": "registry/new-york/ui/box/icons/close.tsx",

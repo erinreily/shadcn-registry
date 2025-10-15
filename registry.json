@@ -21,7 +21,8 @@
           "path": "registry/new-york/ui/box/tokens.scss",
           "type": "registry:ui"
         }
-      ]
+      ],
+      "dependencies": ["sass"]
     },
     {
       "name": "box-icon-button",
@@ -41,7 +42,8 @@
           "path": "registry/new-york/ui/box/tokens.scss",
           "type": "registry:ui"
         }
-      ]
+      ],
+      "dependencies": ["sass"]
     },
     {
       "name": "close-icon",
@@ -53,7 +55,8 @@
           "path": "registry/new-york/ui/box/icons/close.tsx",
           "type": "registry:ui"
         }
-      ]
+      ],
+      "dependencies": ["sass"]
     },
     {
       "name": "box-demo",
@@ -66,7 +69,8 @@
           "path": "registry/new-york/blocks/box-demo/box-demo.tsx",
           "type": "registry:component"
         }
-      ]
+      ],
+      "dependencies": ["sass"]
     },
     {
       "name": "example-with-css",
