@@ -1,5 +1,5 @@
 import React from 'react';
-import './BoxIconButton.scss';
+import './BoxIconButton.css';
 
 export interface BoxIconButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /**

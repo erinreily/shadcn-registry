@@ -1,0 +1,80 @@
+:root {
+  /* Surface tokens */
+  --surface-surface-secondary: #fbfbfb;
+  --surface-surface-brand: #0061d5;
+  --surface-surface-brand-hover: #006ae9;
+  --surface-surface-brand-pressed: #004eac;
+  --surface-cta-surface-secondary: #ffffff;
+  --surface-cta-surface-secondary-hover: #f4f4f4;
+  --surface-cta-surface-secondary-pressed: #e8e8e8;
+  --surface-cta-surface-outline: rgba(0, 0, 0, 0);
+  --surface-cta-surface-outline-hover: rgba(0, 0, 0, 0.04);
+  --surface-cta-surface-outline-pressed: rgba(0, 0, 0, 0.08);
+  --surface-cta-surface-icon: rgba(0, 0, 0, 0);
+  --surface-cta-surface-icon-hover: rgba(0, 0, 0, 0.04);
+  --surface-cta-surface-icon-pressed: rgba(0, 0, 0, 0.08);
+  --surface-cta-surface-tertiary: #ffffff;
+  --surface-cta-surface-tertiary-hover: #f4f4f4;
+  --surface-cta-surface-tertiary-pressed: #e8e8e8;
+
+  /* Border tokens */
+  --border-cta-border-secondary: #bcbcbc;
+  --border-cta-border-secondary-pressed: #bcbcbc;
+  --border-cta-border-secondary-hover: #bcbcbc;
+  --border-cta-border-outline: #000000;
+  --border-cta-border-outline-hover: #000000;
+  --border-cta-border-outline-pressed: #000000;
+  --border-1: 0.0625rem;
+  --border-2: 0.125rem;
+
+  /* Text tokens */
+  --text-text-on-light: #222222;
+  --text-text-on-dark: #ffffff;
+
+  /* Outline tokens */
+  --outline-focus-on-light: #2486fc;
+
+  /* Typography tokens */
+  --body-large-font-family: Lato, -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --body-large-font-weight: 400;
+  --body-large-line-height: 1.5rem;
+  --body-large-font-size: 1rem;
+  --body-large-letter-spacing: 0.01875rem;
+
+  --body-default-bold-font-weight: 700;
+  --body-default-font-family: Lato, -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --body-default-font-weight: 400;
+  --body-default-line-height: 1.25rem;
+  --body-default-font-size: 0.875rem;
+  --body-default-letter-spacing: 0.01875rem;
+
+  --caption-default-font-family: Lato, -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --caption-default-font-weight: 400;
+  --caption-default-line-height: 0.875rem;
+  --caption-default-font-size: 0.75rem;
+  --caption-default-letter-spacing: 0.01875rem;
+
+  /* Radius tokens */
+  --radius-3: 0.5rem;
+  --radius-half: 2rem;
+
+  /* Space tokens */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  /* Size tokens */
+  --size-3: 0.75rem;
+  --size-4: 1rem;
+  --size-5: 1.25rem;
+  --size-8: 2rem;
+  --size-10: 2.5rem;
+  --size-12: 3rem;
+
+  /* Animation tokens */
+  --animation-duration-2: 200ms;
+}
+

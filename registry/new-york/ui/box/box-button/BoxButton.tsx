@@ -1,5 +1,5 @@
 import React from 'react';
-import './BoxButton.scss';
+import './BoxButton.css';
 
 export interface BoxButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline' | 'tertiary';

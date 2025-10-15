@@ -1,0 +1,120 @@
+@import '../tokens.css';
+
+.box-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-family: var(--body-default-font-family);
+  transition: all var(--animation-duration-2) ease;
+  outline: none;
+  position: relative;
+  background-color: var(--surface-surface-secondary);
+  color: var(--text-text-on-light);
+  border-radius: var(--radius-3);
+  flex-shrink: 0;
+}
+
+/* Focus state with blue border */
+.box-icon-button:focus-visible {
+  outline: var(--border-2) solid var(--outline-focus-on-light);
+  outline-offset: 0;
+  box-shadow: 0 0 0 var(--border-2) var(--outline-focus-on-light);
+}
+
+/* Pressed state */
+.box-icon-button:active:not(:disabled) {
+  background-color: var(--surface-cta-surface-icon-pressed);
+  transform: scale(0.98);
+}
+
+/* Hover state */
+.box-icon-button:hover:not(:disabled) {
+  background-color: var(--surface-cta-surface-icon-hover);
+}
+
+/* Disabled state */
+.box-icon-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+  background-color: var(--surface-surface-secondary);
+  color: var(--text-text-on-light);
+}
+
+/* Default variant */
+.box-icon-button--default {
+  background-color: var(--surface-surface-secondary);
+}
+
+.box-icon-button--default:hover:not(:disabled) {
+  background-color: var(--surface-cta-surface-icon-hover);
+}
+
+.box-icon-button--default:active:not(:disabled) {
+  background-color: var(--surface-cta-surface-icon-pressed);
+}
+
+/* Subtle variant */
+.box-icon-button--subtle {
+  background-color: var(--surface-cta-surface-icon);
+}
+
+.box-icon-button--subtle:hover:not(:disabled) {
+  background-color: var(--surface-cta-surface-icon-hover);
+}
+
+.box-icon-button--subtle:active:not(:disabled) {
+  background-color: var(--surface-cta-surface-icon-pressed);
+}
+
+/* Ghost variant */
+.box-icon-button--ghost {
+  background-color: transparent;
+}
+
+.box-icon-button--ghost:hover:not(:disabled) {
+  background-color: var(--surface-cta-surface-icon-hover);
+}
+
+.box-icon-button--ghost:active:not(:disabled) {
+  background-color: var(--surface-cta-surface-icon-pressed);
+}
+
+/* Size variants */
+.box-icon-button--small {
+  width: var(--size-8);
+  height: var(--size-8);
+  font-size: var(--size-3);
+  padding: var(--space-2);
+}
+
+.box-icon-button--small svg {
+  width: var(--size-3);
+  height: var(--size-3);
+}
+
+.box-icon-button--medium {
+  width: var(--size-10);
+  height: var(--size-10);
+  font-size: var(--size-4);
+  padding: var(--space-3);
+}
+
+.box-icon-button--medium svg {
+  width: var(--size-4);
+  height: var(--size-4);
+}
+
+.box-icon-button--large {
+  width: var(--size-12);
+  height: var(--size-12);
+  font-size: var(--size-5);
+  padding: var(--space-4);
+}
+
+.box-icon-button--large svg {
+  width: var(--size-5);
+  height: var(--size-5);
+}
+

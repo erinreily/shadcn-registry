@@ -14,15 +14,14 @@
           "type": "registry:ui"
         },
         {
-          "path": "registry/new-york/ui/box/box-button/BoxButton.scss",
+          "path": "registry/new-york/ui/box/box-button/BoxButton.css",
           "type": "registry:ui"
         },
         {
-          "path": "registry/new-york/ui/box/tokens.scss",
+          "path": "registry/new-york/ui/box/tokens.css",
           "type": "registry:ui"
         }
-      ],
-      "dependencies": ["sass"]
+      ]
     },
     {
       "name": "box-icon-button",
@@ -35,15 +34,14 @@
           "type": "registry:ui"
         },
         {
-          "path": "registry/new-york/ui/box/box-icon-button/BoxIconButton.scss",
+          "path": "registry/new-york/ui/box/box-icon-button/BoxIconButton.css",
           "type": "registry:ui"
         },
         {
-          "path": "registry/new-york/ui/box/tokens.scss",
+          "path": "registry/new-york/ui/box/tokens.css",
           "type": "registry:ui"
         }
-      ],
-      "dependencies": ["sass"]
+      ]
     },
     {
       "name": "close-icon",
@@ -55,8 +53,7 @@
           "path": "registry/new-york/ui/box/icons/close.tsx",
           "type": "registry:ui"
         }
-      ],
-      "dependencies": ["sass"]
+      ]
     },
     {
       "name": "box-demo",
@@ -69,8 +66,7 @@
           "path": "registry/new-york/blocks/box-demo/box-demo.tsx",
           "type": "registry:component"
         }
-      ],
-      "dependencies": ["sass"]
+      ]
     },
     {
       "name": "example-with-css",
