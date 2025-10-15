@@ -10,5 +10,8 @@
       "content": "import React from 'react';\nimport './BoxIconButton.scss';\n\nexport interface BoxIconButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {\n  /**\n   * The icon to display inside the button\n   */\n  children: React.ReactNode;\n  /**\n   * Size variant of the icon button\n   */\n  size?: 'small' | 'medium' | 'large';\n  /**\n   * Visual variant of the icon button\n   */\n  variant?: 'default' | 'subtle' | 'ghost';\n}\n\nexport const BoxIconButton = React.forwardRef<HTMLButtonElement, BoxIconButtonProps>(\n  ({ children, size = 'medium', variant = 'default', className = '', ...props }, ref) => {\n    const classes = [\n      'box-icon-button',\n      `box-icon-button--${variant}`,\n      `box-icon-button--${size}`,\n      className\n    ].filter(Boolean).join(' ');\n\n    return (\n      <button ref={ref} className={classes} type=\"button\" {...props}>\n        {children}\n      </button>\n    );\n  }\n);\n\nBoxIconButton.displayName = 'BoxIconButton';\n\n",
       "type": "registry:ui"
     }
-  ]
+  ],
+  "css": {
+    "@import \"./box-icon-button/BoxIconButton.scss\"": {}
+  }
 }

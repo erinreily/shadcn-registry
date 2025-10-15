@@ -13,7 +13,10 @@
           "path": "registry/new-york/ui/box/box-button/BoxButton.tsx",
           "type": "registry:ui"
         }
-      ]
+      ],
+      "css": {
+        "@import \"./box-button/BoxButton.scss\"": {}
+      }
     },
     {
       "name": "box-icon-button",
@@ -25,7 +28,10 @@
           "path": "registry/new-york/ui/box/box-icon-button/BoxIconButton.tsx",
           "type": "registry:ui"
         }
-      ]
+      ],
+      "css": {
+        "@import \"./box-icon-button/BoxIconButton.scss\"": {}
+      }
     },
     {
       "name": "close-icon",
