@@ -60,11 +60,34 @@
       "type": "registry:component",
       "title": "Box Demo",
       "description": "A demo for box components",
-      "registryDependencies": ["box-button", "box-icon-button", "close-icon"],
       "files": [
         {
           "path": "registry/new-york/blocks/box-demo/box-demo.tsx",
           "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/ui/box/box-button/BoxButton.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/new-york/ui/box/box-button/BoxButton.css",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/new-york/ui/box/box-icon-button/BoxIconButton.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/new-york/ui/box/box-icon-button/BoxIconButton.css",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/new-york/ui/box/icons/close.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/new-york/ui/box/tokens.css",
+          "type": "registry:ui"
         }
       ]
     },
