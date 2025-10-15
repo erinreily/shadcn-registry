@@ -12,11 +12,16 @@
         {
           "path": "registry/new-york/ui/box/box-button/BoxButton.tsx",
           "type": "registry:ui"
+        },
+        {
+          "path": "registry/new-york/ui/box/box-button/BoxButton.scss",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/new-york/ui/box/tokens.scss",
+          "type": "registry:ui"
         }
-      ],
-      "css": {
-        "@import \"./box-button/BoxButton.scss\"": {}
-      }
+      ]
     },
     {
       "name": "box-icon-button",
@@ -27,11 +32,16 @@
         {
           "path": "registry/new-york/ui/box/box-icon-button/BoxIconButton.tsx",
           "type": "registry:ui"
+        },
+        {
+          "path": "registry/new-york/ui/box/box-icon-button/BoxIconButton.scss",
+          "type": "registry:ui"
+        },
+        {
+          "path": "registry/new-york/ui/box/tokens.scss",
+          "type": "registry:ui"
         }
-      ],
-      "css": {
-        "@import \"./box-icon-button/BoxIconButton.scss\"": {}
-      }
+      ]
     },
     {
       "name": "close-icon",
@@ -40,7 +50,7 @@
       "description": "A close icon",
       "files": [
         {
-          "path": "registry/new-york/ui/box/icons/Close.tsx",
+          "path": "registry/new-york/ui/box/icons/close.tsx",
           "type": "registry:ui"
         }
       ]

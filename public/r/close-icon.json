@@ -6,7 +6,7 @@
   "description": "A close icon",
   "files": [
     {
-      "path": "registry/new-york/ui/box/icons/Close.tsx",
+      "path": "registry/new-york/ui/box/icons/close.tsx",
       "content": "import React from 'react';\n\nexport interface CloseIconProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n}\n\nexport const CloseIcon = React.forwardRef<SVGSVGElement, CloseIconProps>(\n  ({ size = 16, className = '', ...props }, ref) => {\n    return (\n      <svg\n        ref={ref}\n        width={size}\n        height={size}\n        viewBox=\"0 0 16 16\"\n        fill=\"none\"\n        xmlns=\"http://www.w3.org/2000/svg\"\n        className={className}\n        {...props}\n      >\n        <path\n          d=\"M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5\"\n          stroke=\"currentColor\"\n          strokeWidth=\"1.5\"\n          strokeLinecap=\"round\"\n          strokeLinejoin=\"round\"\n        />\n      </svg>\n    );\n  }\n);\n\nCloseIcon.displayName = 'CloseIcon';\n\n",
       "type": "registry:ui"
     }
